@@ -1,0 +1,192 @@
+.hero-section {
+  background: radial-gradient(1000px 600px at 80% -200px, rgba(13,110,253,0.25), transparent),
+              linear-gradient(135deg, #0b2239 0%, #1f3a5f 100%);
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://cdn.salla.sa/KrDbg/a36e2e9b-5fc5-4dc8-be41-8c449e21fc76-1000x515.01597444089-35mmoGugULLfAQt8nS0mNq2XSNJbwS1VHZoF02NO.jpg') center/cover;
+  opacity: 0.25;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  color: white;
+  text-align: right;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: heroFadeInUp 1.6s cubic-bezier(.77,0,.18,1) forwards;
+  animation-delay: 0.18s;
+}
+
+.company-logo {
+  max-width: 200px;
+  height: auto;
+  border-radius: 15px;
+  /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); */
+}
+
+.hero-title {
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.3px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero-image {
+  position: relative;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: heroImgInUp 1.7s cubic-bezier(.77,0,.18,1) forwards;
+  animation-delay: 0.45s;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 600px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  margin-top: 30px;
+  animation: heroImgFloat 3.5s ease-in-out infinite alternate;
+  transition: transform 0.5s cubic-bezier(.77,0,.18,1), box-shadow 0.5s;
+}
+
+.hero-image img:hover {
+  transform: scale(1.04) rotate(1deg);
+}
+
+/* Animate buttons on hover */
+.hero-buttons .btn {
+  transition: transform 0.35s cubic-bezier(.77,0,.18,1), box-shadow 0.35s;
+}
+.hero-buttons .btn:hover {
+  transform: translateY(-4px) scale(1.06);
+  box-shadow: 0 8px 32px #25d36633;
+}
+
+/* Keyframes */
+@keyframes heroFadeIn {
+  from { opacity: 0; transform: translateY(40px);}
+  to   { opacity: 1; transform: translateY(0);}
+}
+@keyframes heroImgIn {
+  from { opacity: 0; transform: translateY(60px) scale(0.96);}
+  to   { opacity: 1; transform: translateY(0) scale(1);}
+}
+@keyframes heroImgFloat {
+  from { transform: translateY(0);}
+  to   { transform: translateY(-18px);}
+}
+
+/* Keyframes for smooth up animation */
+@keyframes heroFadeInUp {
+  from { opacity: 0; transform: translateY(30px);}
+  to   { opacity: 1; transform: translateY(0);}
+}
+@keyframes heroImgInUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to   { opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .company-logo {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 80vh;
+    text-align: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .company-logo {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title {
+    font-size: 1.75rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-image img {
+    max-width: 100%;
+    height: 280px;
+    margin-top: 20px;
+  }
+}

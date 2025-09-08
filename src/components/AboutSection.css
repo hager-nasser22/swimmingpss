@@ -1,0 +1,149 @@
+.about-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.section-header {
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.title-underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+/* الحالة الافتراضية: مخفي */
+.about-content,
+.about-image {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* أول ما يبان السيكشن */
+.about-section.animate .about-content {
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.about-section.animate .about-image {
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.about-features {
+  margin-top: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.feature-item i {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s cubic-bezier(.77,0,.18,1), box-shadow 0.5s;
+}
+
+.about-image img:hover {
+  transform: scale(1.04) rotate(-2deg);
+  box-shadow: 0 8px 32px #007bff33;
+}
+
+/* keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .about-section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .about-title {
+    font-size: 1.75rem;
+  }
+  
+  .about-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .about-features {
+    text-align: right;
+  }
+  
+  .feature-item {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .about-title {
+    font-size: 1.5rem;
+  }
+  
+  .about-text {
+    font-size: 0.95rem;
+  }
+  
+  .feature-item {
+    font-size: 1rem;
+  }
+}

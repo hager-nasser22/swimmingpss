@@ -1,0 +1,191 @@
+.products-section {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.section-header {
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.title-underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  margin: 0 auto 1rem;
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.product-tabs {
+  background: #f8f9fa;
+  border-radius: 25px;
+  padding: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-tab {
+  border-radius: 20px !important;
+  padding: 12px 30px !important;
+  font-weight: 600;
+  color: #666 !important;
+  border: none !important;
+  transition: all 0.3s ease;
+}
+
+.product-tab:hover {
+  color: #007bff !important;
+  background-color: transparent !important;
+}
+
+.product-tab.active {
+  background-color: #007bff !important;
+  color: white !important;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.product-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.product-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image {
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:rgb(14 119 232 / 32%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+.product-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.product-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.product-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.feature-tag {
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .products-section {
+    padding: 60px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .product-tab {
+    padding: 10px 20px !important;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-tabs {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .product-tab {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .product-image {
+    height: 200px;
+  }
+  
+  .product-title {
+    font-size: 1.1rem;
+  }
+  
+  .product-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .product-image {
+    height: 180px;
+  }
+  
+  .feature-tag {
+    font-size: 0.75rem;
+    padding: 3px 10px;
+  }
+}
