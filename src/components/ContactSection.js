@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Card } from 'react-bootstrap';
 import emailjs from 'emailjs-com';
+import Swal from 'sweetalert2';
 import './ContactSection.css';
 
 const ContactSection = () => {
@@ -33,12 +34,24 @@ const ContactSection = () => {
       "XS8487sl568Fgx2wX"        
     )
     .then(() => {
-      alert("تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.");
+      Swal.fire({
+        icon: "success",
+        title: "تم الإرسال ✅",
+        text: "تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.",
+        confirmButtonText: "موافق",
+        confirmButtonColor: "#0d6efd",
+      });
       setFormData({ name: '', email: '', message: '' });
     })
     .catch((error) => {
       console.error("EmailJS Error:", error);
-      alert("حدث خطأ أثناء إرسال الرسالة. حاول مرة أخرى.");
+      Swal.fire({
+        icon: "error",
+        title: "حدث خطأ ❌",
+        text: "حاول مرة أخرى لاحقاً.",
+        confirmButtonText: "تمام",
+        confirmButtonColor: "#dc3545",
+      });
     });
   };
 
