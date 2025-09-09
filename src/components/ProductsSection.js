@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
+import { Container, Row, Col, Nav, Tab, Form } from 'react-bootstrap';
 import ProductCard from './ProductCard';
 import './ProductsSection.css';
 
@@ -188,20 +188,36 @@ const ProductsSection = () => {
                       <div className="title-underline"></div>
         
         <Tab.Container activeKey={activeTab} onSelect={(k) => setActiveTab(k)}>
-          <Nav variant="pills" className="justify-content-center mb-4 product-tabs">
-  <Nav.Item>
-    <Nav.Link eventKey="waterfalls" className="product-tab">أنظمة الأمان</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="covers" className="product-tab">أغطية المسابح</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="barriers" className="product-tab">الحواجز</Nav.Link>
-  </Nav.Item>
-  <Nav.Item>
-    <Nav.Link eventKey="accessories" className="product-tab">إكسسوارات</Nav.Link>
-  </Nav.Item>
-</Nav>
+          {/* ✅ Nav Pills في الشاشات الكبيرة */}
+      <div className="d-none d-md-flex justify-content-center mb-4 product-tabs">
+        <Nav variant="pills" activeKey={activeTab} onSelect={(k) => setActiveTab(k)}>
+          <Nav.Item>
+            <Nav.Link eventKey="waterfalls" className="product-tab">أنظمة الأمان</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="covers" className="product-tab">أغطية المسابح</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="barriers" className="product-tab">الحواجز</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="accessories" className="product-tab">إكسسوارات</Nav.Link>
+          </Nav.Item>
+        </Nav>
+      </div>
+
+      {/* ✅ Dropdown في الشاشات الصغيرة */}
+      <div className="d-md-none mb-4">
+        <Form.Select
+          value={activeTab}
+          onChange={(e) => setActiveTab(e.target.value)}
+        >
+          <option value="waterfalls">أنظمة الأمان</option>
+          <option value="covers">أغطية المسابح</option>
+          <option value="barriers">الحواجز</option>
+          <option value="accessories">إكسسوارات</option>
+        </Form.Select>
+      </div>
 
 
           <Tab.Content>
