@@ -40,6 +40,10 @@
 @media (max-width: 991px) {
   .nav-whatsapp { width: 100%; text-align: center; }
 }
-
+@media (max-width: 576px) {
+  .brand-text{
+    display: none;
+  }
+}
 
 
