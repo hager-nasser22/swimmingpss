@@ -28,17 +28,24 @@
   margin-bottom: 0;
 }
 
-/* تبويب المنتجات */
 .product-tabs {
   background: #f8f9fa;
   border-radius: 40px;
   padding: 8px;
-  display: inline-flex;
+  display: flex;
   gap: 10px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  overflow-x: auto;   /* ✅ يخليهم Scrollable */
+  white-space: nowrap; /* ✅ يمنع النزول تحت بعض */
+  -webkit-overflow-scrolling: touch; /* ✅ سكرول ناعم في الموبايل */
+}
+
+.product-tabs::-webkit-scrollbar {
+  display: none; /* ✅ يخفي الـ Scrollbar */
 }
 
 .product-tab {
+  flex: 0 0 auto;   /* ✅ كل تاب ياخد عرضه فقط */
   border-radius: 30px !important;
   padding: 12px 28px !important;
   font-weight: 600;
@@ -59,6 +66,7 @@
   color: #fff !important;
   box-shadow: 0 5px 15px rgba(0, 91, 187, 0.4);
 }
+
 
 
 .product-card {
