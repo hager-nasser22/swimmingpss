@@ -207,17 +207,18 @@ const ProductsSection = () => {
             {Object.keys(productsData).map((key) => (
               <Tab.Pane key={key} eventKey={key}>
                 <Row>
-                  {productsData[key].map((product, index) => (
-                    <Col
-                      key={product.id}
-                      md={4}
-                      className={`fade-up ${isVisible ? 'visible' : ''}`}
-                      style={{ transitionDelay: `${index * 0.2}s` }}
-                    >
-                      <ProductCard {...product} />
-                    </Col>
-                  ))}
-                </Row>
+  {productsData[key].map((product, index) => (
+    <Col
+      key={product.id}
+      md={4}
+      className={`fade-up ${isVisible ? 'visible' : ''}`}
+      style={{ transitionDelay: isVisible ? `${index * 0.2}s` : "0s" }}
+    >
+      <ProductCard {...product} />
+    </Col>
+  ))}
+</Row>
+
               </Tab.Pane>
             ))}
           </Tab.Content>
