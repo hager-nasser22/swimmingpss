@@ -22,6 +22,8 @@ const ProjectsSlider = () => {
         <Row className="justify-content-center text-center mb-5">
           <Col lg={8}>
             <h2 className="section-title">أعمالنا</h2>
+                      <div className="title-underline"></div>
+
             <p className="section-subtitle">
               مجموعة مختارة من المشاريع المنفذة باحترافية وجودة عالية
             </p>

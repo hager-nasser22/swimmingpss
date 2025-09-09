@@ -1,0 +1,81 @@
+.product-card {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #fff;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* صورة */
+.product-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image {
+  height: 240px;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.product-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(11,34,57,0.55);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.product-card:hover .product-overlay {
+  opacity: 1;
+}
+
+/* النصوص */
+.product-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0b2239;
+}
+
+.product-code {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+.product-description {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* المميزات */
+.product-features {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.feature-tag {
+  background: #eef5fb;
+  color: #0b2239;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+}

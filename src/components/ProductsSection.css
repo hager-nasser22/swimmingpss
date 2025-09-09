@@ -28,32 +28,38 @@
   margin-bottom: 0;
 }
 
+/* تبويب المنتجات */
 .product-tabs {
   background: #f8f9fa;
-  border-radius: 25px;
-  padding: 5px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
+  padding: 8px;
+  display: inline-flex;
+  gap: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
 }
 
 .product-tab {
-  border-radius: 20px !important;
-  padding: 12px 30px !important;
+  border-radius: 30px !important;
+  padding: 12px 28px !important;
   font-weight: 600;
-  color: #666 !important;
+  font-size: 1rem;
+  color: #555 !important;
   border: none !important;
+  background: transparent !important;
   transition: all 0.3s ease;
 }
 
 .product-tab:hover {
   color: #007bff !important;
-  background-color: transparent !important;
+  background: rgba(0, 123, 255, 0.08) !important;
 }
 
 .product-tab.active {
-  background-color: #007bff !important;
-  color: white !important;
-  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+  background: linear-gradient(135deg, #007bff, #0056b3) !important;
+  color: #fff !important;
+  box-shadow: 0 5px 15px rgba(0, 91, 187, 0.4);
 }
+
 
 .product-card {
   border: none;
@@ -89,7 +95,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background:rgb(14 119 232 / 32%);
+  background:rgb(77 80 84 / 27%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,6 +193,74 @@
   .feature-tag {
     font-size: 0.75rem;
     padding: 3px 10px;
+  }
+}
+
+/* Modal */
+.custom-modal .modal-content {
+  border-radius: 20px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  animation: fadeInScale 0.4s ease;
+}
+
+.modal-title-custom {
+  font-size: 1.6rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.product-code {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature-icon {
+  color: #4caf50;
+  margin-left: 8px;
+  font-size: 1.2rem;
+}
+
+.gradient-btn {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  border: none;
+  padding: 8px 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.gradient-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
