@@ -168,6 +168,7 @@
   
   .footer-section-title {
     font-size: 1.1rem;
+    text-align: center;
   }
 }
 
@@ -196,6 +197,9 @@
     text-align: center;
     margin-top: 0.5rem;
   }
+  .services-list li::before{
+    right: 26%;
+  }
 }
 
 @media (max-width: 576px) {
@@ -214,6 +218,7 @@
   
   .footer-section-title {
     font-size: 1rem;
+    text-align: center;
   }
   
   .footer-description,
@@ -226,4 +231,8 @@
     display: block;
     margin: 0.5rem 0;
   }
+  .services-list li::before{
+    right: 26%;
+  }
 }
+

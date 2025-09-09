@@ -1,5 +1,5 @@
 .testimonials-section {
-  background: linear-gradient(120deg, #e3f0ff 0%, #f8fafc 100%);
+  background: linear-gradient(120deg, #e9eff6 0%, #f8fafc 100%);
   padding: 60px 0 70px 0;
 }
 .section-header .section-title {
@@ -106,7 +106,7 @@
 .testimonial-card-custom {
   background: #fff;
   border-radius: 18px;
-  box-shadow: 0 4px 18px rgba(0,123,255,0.08), 0 1.5px 8px rgba(37,211,102,0.04);
+  /* box-shadow: 0 4px 18px rgba(0,123,255,0.08), 0 1.5px 8px rgba(37,211,102,0.04); */
   padding: 24px 12px 18px 12px;
   position: relative;
   min-height: 220px;
@@ -121,7 +121,7 @@
 }
 .testimonial-card-custom:hover {
   background: #f3faff;
-  box-shadow: 0 8px 32px rgba(0,123,255,0.13), 0 2px 12px rgba(37,211,102,0.08);
+  /* box-shadow: 0 8px 32px rgba(0,123,255,0.13), 0 2px 12px rgba(37,211,102,0.08); */
   transform: translateY(-4px) scale(1.025);
 }
 .testimonial-avatar-wrapper {
@@ -247,5 +247,6 @@
   margin-top: 0.5rem !important;
   margin-bottom: 0.5rem !important;
 }
+
 
 

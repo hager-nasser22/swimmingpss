@@ -46,7 +46,7 @@ const HeroSection = () => {
             <Col lg={6} className="text-center">
               <div className="hero-image">
                 <img 
-                  src="https://cdn.salla.sa/KrDbg/cde56d6f-2a21-4279-943e-4e2eb5293743-1000x515.01597444089-I4R03yKxD6zd3BzCKGsj5tSLizbU5yS6ZTt3a7qR.jpg" 
+                  src="/images/hero.jpeg" 
                   alt="شلالات ونوافير المياه" 
                   className="img-fluid rounded-3 shadow-lg"
                 />

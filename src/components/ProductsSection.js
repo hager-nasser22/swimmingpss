@@ -169,6 +169,300 @@ const fountainProducts = [
   },
 ];
 
+const safetyProducts = [
+  {
+    id: 1,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 2,
+    title: "شلالات الحجر الطبيعي",
+    description: "شلالات مصنوعة من الحجر الطبيعي بأشكال عضوية طبيعية، تناسب الحدائق والمساحات الخارجية",
+    image: "https://cdn.salla.sa/KrDbg/d966a233-971a-4c42-9488-39f2ec119e64-500x353.52815395581-MMgLUnRUkJatMSJ2Xn9H1S9IR5oGnRIH776H2m6D.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/704b4b1c-541f-42b0-80e0-3b315ee4d4e7-1000x516.33568225496-omFrt6W1SnP74qinMnKfs2ajCTw0Uk8gZU9a5A5N.jpg",
+    features: ["حجر طبيعي", "مقاوم للعوامل الجوية", "تصميم عضوي"]
+  },
+  {
+    id: 3,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 4,
+    title: "شلالات الحجر الطبيعي",
+    description: "شلالات مصنوعة من الحجر الطبيعي بأشكال عضوية طبيعية، تناسب الحدائق والمساحات الخارجية",
+    image: "https://cdn.salla.sa/KrDbg/d966a233-971a-4c42-9488-39f2ec119e64-500x353.52815395581-MMgLUnRUkJatMSJ2Xn9H1S9IR5oGnRIH776H2m6D.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/704b4b1c-541f-42b0-80e0-3b315ee4d4e7-1000x516.33568225496-omFrt6W1SnP74qinMnKfs2ajCTw0Uk8gZU9a5A5N.jpg",
+    features: ["حجر طبيعي", "مقاوم للعوامل الجوية", "تصميم عضوي"]
+  },
+  {
+    id: 5,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 6,
+    title: "شلالات الحجر الطبيعي",
+    description: "شلالات مصنوعة من الحجر الطبيعي بأشكال عضوية طبيعية، تناسب الحدائق والمساحات الخارجية",
+    image: "https://cdn.salla.sa/KrDbg/d966a233-971a-4c42-9488-39f2ec119e64-500x353.52815395581-MMgLUnRUkJatMSJ2Xn9H1S9IR5oGnRIH776H2m6D.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/704b4b1c-541f-42b0-80e0-3b315ee4d4e7-1000x516.33568225496-omFrt6W1SnP74qinMnKfs2ajCTw0Uk8gZU9a5A5N.jpg",
+    features: ["حجر طبيعي", "مقاوم للعوامل الجوية", "تصميم عضوي"]
+  },
+  {
+    id: 7,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 8,
+    title: "شلالات الحجر الطبيعي",
+    description: "شلالات مصنوعة من الحجر الطبيعي بأشكال عضوية طبيعية، تناسب الحدائق والمساحات الخارجية",
+    image: "https://cdn.salla.sa/KrDbg/d966a233-971a-4c42-9488-39f2ec119e64-500x353.52815395581-MMgLUnRUkJatMSJ2Xn9H1S9IR5oGnRIH776H2m6D.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/704b4b1c-541f-42b0-80e0-3b315ee4d4e7-1000x516.33568225496-omFrt6W1SnP74qinMnKfs2ajCTw0Uk8gZU9a5A5N.jpg",
+    features: ["حجر طبيعي", "مقاوم للعوامل الجوية", "تصميم عضوي"]
+  },
+    {
+    id: 9,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 10,
+    title: "شلالات الحجر الطبيعي",
+    description: "شلالات مصنوعة من الحجر الطبيعي بأشكال عضوية طبيعية، تناسب الحدائق والمساحات الخارجية",
+    image: "https://cdn.salla.sa/KrDbg/d966a233-971a-4c42-9488-39f2ec119e64-500x353.52815395581-MMgLUnRUkJatMSJ2Xn9H1S9IR5oGnRIH776H2m6D.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/704b4b1c-541f-42b0-80e0-3b315ee4d4e7-1000x516.33568225496-omFrt6W1SnP74qinMnKfs2ajCTw0Uk8gZU9a5A5N.jpg",
+    features: ["حجر طبيعي", "مقاوم للعوامل الجوية", "تصميم عضوي"]
+  },
+  {
+    id: 11,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 12,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  }
+];
+const coverProducts = [
+  {
+    id: 1,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 2,
+    title: "شلالات الحجر الطبيعي",
+    description: "شلالات مصنوعة من الحجر الطبيعي بأشكال عضوية طبيعية، تناسب الحدائق والمساحات الخارجية",
+    image: "https://cdn.salla.sa/KrDbg/d966a233-971a-4c42-9488-39f2ec119e64-500x353.52815395581-MMgLUnRUkJatMSJ2Xn9H1S9IR5oGnRIH776H2m6D.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/704b4b1c-541f-42b0-80e0-3b315ee4d4e7-1000x516.33568225496-omFrt6W1SnP74qinMnKfs2ajCTw0Uk8gZU9a5A5N.jpg",
+    features: ["حجر طبيعي", "مقاوم للعوامل الجوية", "تصميم عضوي"]
+  },
+  {
+    id: 3,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 4,
+    title: "شلالات الحجر الطبيعي",
+    description: "شلالات مصنوعة من الحجر الطبيعي بأشكال عضوية طبيعية، تناسب الحدائق والمساحات الخارجية",
+    image: "https://cdn.salla.sa/KrDbg/d966a233-971a-4c42-9488-39f2ec119e64-500x353.52815395581-MMgLUnRUkJatMSJ2Xn9H1S9IR5oGnRIH776H2m6D.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/704b4b1c-541f-42b0-80e0-3b315ee4d4e7-1000x516.33568225496-omFrt6W1SnP74qinMnKfs2ajCTw0Uk8gZU9a5A5N.jpg",
+    features: ["حجر طبيعي", "مقاوم للعوامل الجوية", "تصميم عضوي"]
+  },
+  {
+    id: 5,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 6,
+    title: "شلالات الحجر الطبيعي",
+    description: "شلالات مصنوعة من الحجر الطبيعي بأشكال عضوية طبيعية، تناسب الحدائق والمساحات الخارجية",
+    image: "https://cdn.salla.sa/KrDbg/d966a233-971a-4c42-9488-39f2ec119e64-500x353.52815395581-MMgLUnRUkJatMSJ2Xn9H1S9IR5oGnRIH776H2m6D.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/704b4b1c-541f-42b0-80e0-3b315ee4d4e7-1000x516.33568225496-omFrt6W1SnP74qinMnKfs2ajCTw0Uk8gZU9a5A5N.jpg",
+    features: ["حجر طبيعي", "مقاوم للعوامل الجوية", "تصميم عضوي"]
+  },
+  {
+    id: 7,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 8,
+    title: "شلالات الحجر الطبيعي",
+    description: "شلالات مصنوعة من الحجر الطبيعي بأشكال عضوية طبيعية، تناسب الحدائق والمساحات الخارجية",
+    image: "https://cdn.salla.sa/KrDbg/d966a233-971a-4c42-9488-39f2ec119e64-500x353.52815395581-MMgLUnRUkJatMSJ2Xn9H1S9IR5oGnRIH776H2m6D.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/704b4b1c-541f-42b0-80e0-3b315ee4d4e7-1000x516.33568225496-omFrt6W1SnP74qinMnKfs2ajCTw0Uk8gZU9a5A5N.jpg",
+    features: ["حجر طبيعي", "مقاوم للعوامل الجوية", "تصميم عضوي"]
+  },
+    {
+    id: 9,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 10,
+    title: "شلالات الحجر الطبيعي",
+    description: "شلالات مصنوعة من الحجر الطبيعي بأشكال عضوية طبيعية، تناسب الحدائق والمساحات الخارجية",
+    image: "https://cdn.salla.sa/KrDbg/d966a233-971a-4c42-9488-39f2ec119e64-500x353.52815395581-MMgLUnRUkJatMSJ2Xn9H1S9IR5oGnRIH776H2m6D.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/704b4b1c-541f-42b0-80e0-3b315ee4d4e7-1000x516.33568225496-omFrt6W1SnP74qinMnKfs2ajCTw0Uk8gZU9a5A5N.jpg",
+    features: ["حجر طبيعي", "مقاوم للعوامل الجوية", "تصميم عضوي"]
+  },
+  {
+    id: 11,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 12,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  }
+];
+const barrierProducts = [
+  {
+    id: 1,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 2,
+    title: "شلالات الحجر الطبيعي",
+    description: "شلالات مصنوعة من الحجر الطبيعي بأشكال عضوية طبيعية، تناسب الحدائق والمساحات الخارجية",
+    image: "https://cdn.salla.sa/KrDbg/d966a233-971a-4c42-9488-39f2ec119e64-500x353.52815395581-MMgLUnRUkJatMSJ2Xn9H1S9IR5oGnRIH776H2m6D.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/704b4b1c-541f-42b0-80e0-3b315ee4d4e7-1000x516.33568225496-omFrt6W1SnP74qinMnKfs2ajCTw0Uk8gZU9a5A5N.jpg",
+    features: ["حجر طبيعي", "مقاوم للعوامل الجوية", "تصميم عضوي"]
+  },
+  {
+    id: 3,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 4,
+    title: "شلالات الحجر الطبيعي",
+    description: "شلالات مصنوعة من الحجر الطبيعي بأشكال عضوية طبيعية، تناسب الحدائق والمساحات الخارجية",
+    image: "https://cdn.salla.sa/KrDbg/d966a233-971a-4c42-9488-39f2ec119e64-500x353.52815395581-MMgLUnRUkJatMSJ2Xn9H1S9IR5oGnRIH776H2m6D.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/704b4b1c-541f-42b0-80e0-3b315ee4d4e7-1000x516.33568225496-omFrt6W1SnP74qinMnKfs2ajCTw0Uk8gZU9a5A5N.jpg",
+    features: ["حجر طبيعي", "مقاوم للعوامل الجوية", "تصميم عضوي"]
+  },
+  {
+    id: 5,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 6,
+    title: "شلالات الحجر الطبيعي",
+    description: "شلالات مصنوعة من الحجر الطبيعي بأشكال عضوية طبيعية، تناسب الحدائق والمساحات الخارجية",
+    image: "https://cdn.salla.sa/KrDbg/d966a233-971a-4c42-9488-39f2ec119e64-500x353.52815395581-MMgLUnRUkJatMSJ2Xn9H1S9IR5oGnRIH776H2m6D.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/704b4b1c-541f-42b0-80e0-3b315ee4d4e7-1000x516.33568225496-omFrt6W1SnP74qinMnKfs2ajCTw0Uk8gZU9a5A5N.jpg",
+    features: ["حجر طبيعي", "مقاوم للعوامل الجوية", "تصميم عضوي"]
+  },
+  {
+    id: 7,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 8,
+    title: "شلالات الحجر الطبيعي",
+    description: "شلالات مصنوعة من الحجر الطبيعي بأشكال عضوية طبيعية، تناسب الحدائق والمساحات الخارجية",
+    image: "https://cdn.salla.sa/KrDbg/d966a233-971a-4c42-9488-39f2ec119e64-500x353.52815395581-MMgLUnRUkJatMSJ2Xn9H1S9IR5oGnRIH776H2m6D.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/704b4b1c-541f-42b0-80e0-3b315ee4d4e7-1000x516.33568225496-omFrt6W1SnP74qinMnKfs2ajCTw0Uk8gZU9a5A5N.jpg",
+    features: ["حجر طبيعي", "مقاوم للعوامل الجوية", "تصميم عضوي"]
+  },
+    {
+    id: 9,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 10,
+    title: "شلالات الحجر الطبيعي",
+    description: "شلالات مصنوعة من الحجر الطبيعي بأشكال عضوية طبيعية، تناسب الحدائق والمساحات الخارجية",
+    image: "https://cdn.salla.sa/KrDbg/d966a233-971a-4c42-9488-39f2ec119e64-500x353.52815395581-MMgLUnRUkJatMSJ2Xn9H1S9IR5oGnRIH776H2m6D.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/704b4b1c-541f-42b0-80e0-3b315ee4d4e7-1000x516.33568225496-omFrt6W1SnP74qinMnKfs2ajCTw0Uk8gZU9a5A5N.jpg",
+    features: ["حجر طبيعي", "مقاوم للعوامل الجوية", "تصميم عضوي"]
+  },
+  {
+    id: 11,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  },
+  {
+    id: 12,
+    title: "شلالات الحائط الحديثة",
+    description: "تصميمات مبتكرة لشلالات الحائط بأشكال هندسية متنوعة، مناسبة للمسابح المنزلية والتجارية",
+    image: "https://cdn.salla.sa/KrDbg/4c1e4412-ec7d-4a8c-8275-10e835d6ecaf-500x353.52815395581-Zwl5OIxK2iTzytH37j3lO9NKCGFoatIxiOTR2i8c.jpg",
+    hoverImage: "https://cdn.salla.sa/KrDbg/40f4186e-5d92-4f51-93f0-57e0b4d96617-500x353.52815395581-OCOveRLe1aYV7r83CRtP1ZltImh40XKJ1BuZCvlo.jpg",
+    features: ["تصميم عصري", "مواد عالية الجودة", "سهولة التركيب"]
+  }
+];
 const accessoriesProducts = [
     {
     id: 1,
@@ -204,6 +498,7 @@ const accessoriesProducts = [
   },
 ];
 
+
 const ProductsSection = () => {
   const [activeTab, setActiveTab] = useState('waterfalls');
 
@@ -234,6 +529,21 @@ const ProductsSection = () => {
                 <Nav.Item>
                   <Nav.Link eventKey="fountains" className="product-tab">
                     نوافير
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="safety" className="product-tab">
+                    امان المسابح
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="covers" className="product-tab">
+                    اغطية المسابح
+                  </Nav.Link>
+                </Nav.Item>
+                <Nav.Item>
+                  <Nav.Link eventKey="barriers" className="product-tab">
+                    حواجز المسابح
                   </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
@@ -276,6 +586,52 @@ const ProductsSection = () => {
                 ))}
               </Row>
             </Tab.Pane>
+            <Tab.Pane eventKey="safety">
+              <Row>
+                {safetyProducts.map((product) => (
+                  <Col lg={6} xl={3} key={product.id} className="mb-4">
+                    <ProductCard 
+                      title={product.title}
+                      description={product.description}
+                      image={product.image}
+                      hoverImage={product.hoverImage}
+                      features={product.features}
+                    />
+                  </Col>
+                ))}
+              </Row>
+            </Tab.Pane>
+            <Tab.Pane eventKey="covers">
+              <Row>
+                {coverProducts.map((product) => (
+                  <Col lg={6} xl={3} key={product.id} className="mb-4">
+                    <ProductCard 
+                      title={product.title}
+                      description={product.description}
+                      image={product.image}
+                      hoverImage={product.hoverImage}
+                      features={product.features}
+                    />
+                  </Col>
+                ))}
+              </Row>
+            </Tab.Pane>
+            <Tab.Pane eventKey="barriers">
+              <Row>
+                {barrierProducts.map((product) => (
+                  <Col lg={6} xl={3} key={product.id} className="mb-4">
+                    <ProductCard 
+                      title={product.title}
+                      description={product.description}
+                      image={product.image}
+                      hoverImage={product.hoverImage}
+                      features={product.features}
+                    />
+                  </Col>
+                ))}
+              </Row>
+            </Tab.Pane>
+            
             <Tab.Pane eventKey="accessories">
               <Row>
                 {accessoriesProducts.map((product) => (

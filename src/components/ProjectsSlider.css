@@ -1,97 +1,48 @@
 .projects-section {
-  padding: 0 0 80px;
-  background: linear-gradient(135deg, #0b2239 0%, #1f3a5f 100%);
-  position: relative;
-  overflow: hidden;
+  padding: 70px 0;
+  background: #f9fbfd; /* خلفية فاتحة */
 }
 
-/* نجوم خلفية */
-.projects-section::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: url("https://www.transparenttextures.com/patterns/stardust.png");
-  opacity: 0.1;
-  pointer-events: none;
-}
-
-/* موجات */
-.wave-top svg, .wave-bottom svg {
-  width: 100%; height: 80px; display: block;
-}
-.wave-top path, .wave-bottom path { fill: #0b2239; opacity: 0.25; }
-
-/* عنوان */
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   font-weight: 700;
+  color: #0b2239; /* أزرق غامق */
   margin-bottom: 12px;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeUp 1s ease forwards;
-  color: white;
-}
-.text-gradient {
-  background: linear-gradient(135deg, #fff, #fda085);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.title-underline {
-  width: 80px;
-  height: 4px;
-  margin: 0 auto 20px;
-  border-radius: 6px;
-  background: linear-gradient(135deg, #f6d365, #fda085);
 }
 
-/* صور */
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 35px;
+}
+
 .carousel-image-wrapper {
-  border-radius: 20px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
-  border: 3px solid transparent;
-  background: linear-gradient(white, white) padding-box,
-              linear-gradient(135deg, #f6d365, #fda085) border-box;
-  transition: transform 0.5s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
 }
 .carousel-image-wrapper:hover {
-  transform: translateY(-10px) scale(1.02);
+  transform: scale(1.02);
 }
 
 .carousel-image {
-  height: 520px;
-  object-fit: cover;
-  transition: transform 0.6s ease;
-}
-.carousel-image:hover {
-  transform: scale(1.05);
+  height: 480px;
+  object-fit: fill;
+  width: 100%;
+  border-radius: 16px;
 }
 
-/* أنيميشين */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* يخلي الأسهم واضحة على الخلفية */
 }
 
-/* Responsive */
 @media (max-width: 992px) {
-  .carousel-image { height: 360px; }
+  .carousel-image { height: 320px; }
 }
+
 @media (max-width: 576px) {
-  .carousel-image { height: 240px; }
-  .section-title { font-size: 2rem; }
-}
-
-/* أنيميشن الفيد أب */
-.fade-up {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-
-.fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
+  .carousel-image { height: 220px; }
+  .section-title { font-size: 1.8rem; }
 }

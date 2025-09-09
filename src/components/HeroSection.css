@@ -144,7 +144,9 @@
     min-height: 80vh;
     text-align: center;
   }
-  
+  .text-start{
+    padding-top:25px;
+  }
   .hero-content {
     text-align: center;
     margin-bottom: 2rem;
@@ -171,7 +173,9 @@
   .hero-title {
     font-size: 1.75rem;
   }
-  
+  .text-start{
+    padding-top:25px;
+  }
   .hero-buttons {
     flex-direction: column;
     align-items: center;
