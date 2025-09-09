@@ -111,9 +111,9 @@ const TestimonialsSection = () => {
                         className="testimonial-avatar"
                       />
                     </div>
-                    <div className="testimonial-quote-icon-top">
+                    {/* <div className="testimonial-quote-icon-top">
                       <svg width="32" height="32" fill="#007bff" viewBox="0 0 24 24"><path d="M7.17 17.93c-1.1 0-2-.9-2-2v-2.24c0-2.09 1.7-3.79 3.79-3.79.55 0 1 .45 1 1s-.45 1-1 1c-1.03 0-1.79.76-1.79 1.79v2.24c0 .55-.45 1-1 1zm7.66 0c-1.1 0-2-.9-2-2v-2.24c0-2.09 1.7-3.79 3.79-3.79.55 0 1 .45 1 1s-.45 1-1 1c-1.03 0-1.79.76-1.79 1.79v2.24c0 .55-.45 1-1 1z"/></svg>
-                    </div>
+                    </div> */}
                     <div className="testimonial-rating mb-2">
                       {[...Array(5)].map((_, idx) => (
                         <span key={idx} style={{color: idx < t.rating ? '#ffc107' : '#e4e5e9', fontSize: '1.1rem'}}>★</span>
@@ -122,9 +122,9 @@ const TestimonialsSection = () => {
                     <p className="testimonial-text-custom mb-0">{t.text}</p>
                     <div className="testimonial-author-custom">{t.name}</div>
                     <div className="testimonial-role-custom">{t.role}</div>
-                    <div className="testimonial-quote-icon-bottom">
+                    {/* <div className="testimonial-quote-icon-bottom">
                       <svg width="28" height="28" fill="#25d366" viewBox="0 0 24 24"><path d="M7.17 17.93c-1.1 0-2-.9-2-2v-2.24c0-2.09 1.7-3.79 3.79-3.79.55 0 1 .45 1 1s-.45 1-1 1c-1.03 0-1.79.76-1.79 1.79v2.24c0 .55-.45 1-1 1zm7.66 0c-1.1 0-2-.9-2-2v-2.24c0-2.09 1.7-3.79 3.79-3.79.55 0 1 .45 1 1s-.45 1-1 1c-1.03 0-1.79.76-1.79 1.79v2.24c0 .55-.45 1-1 1z"/></svg>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               ))}

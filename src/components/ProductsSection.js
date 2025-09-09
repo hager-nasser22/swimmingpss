@@ -152,6 +152,7 @@ const productsData = {
       ]
     },
   ],
+  
 };
 
 const ProductsSection = () => {
