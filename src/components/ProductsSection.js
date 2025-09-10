@@ -140,10 +140,101 @@ const productsData = {
         "يفصل حسب الطلب"
       ]
     },
-    
-    
   ],
-  
+  waterfallsNew:[
+    {
+      id: 13,
+      title: "شلال نجمة (دفع سفلي)",
+      code: "WF 014",
+      image: "/images/projects/project-12.jpeg", // غيريها لمسار الصورة الفعلي
+      description: "شلال شفاف نجمة دفع سفلي نقطي يضفي لمسة رائعة للنافورة أو المسبح الخاص بك.",
+      features: [
+        "مصنوع من مادة الأكريليك فايبر الشفاف"
+      ]
+    },
+    {
+      id: 14,
+      title: "شلال وردة (دفع سفلي)",
+      code: "WF 013",
+      image: "/images/projects/project-13.jpeg",
+      description: "شلال شفاف وردة دفع سفلي نقطي يضفي لمسة رائعة للنافورة أو المسبح الخاص بك.",
+      features: [
+        "مصنوع من مادة الأكريليك فايبر الشفاف"
+      ]
+    },
+    {
+      id: 15,
+      title: "شلال سداسي (دفع سفلي)",
+      code: "WF 012",
+      image: "/images/projects/project-14.jpeg",
+      description: "شلال شفاف سداسي دفع سفلي نقطي يضفي لمسة رائعة للنافورة أو المسبح الخاص بك.",
+      features: [
+        "مصنوع من مادة الأكريليك فايبر الشفاف"
+      ]
+    },
+    {
+      id: 16,
+      title: "شلال دائري (دفع سفلي)",
+      code: "WF 011",
+      image: "/images/projects/project-15.jpeg",
+      description: "شلال شفاف دائري دفع سفلي نقطي يضفي لمسة رائعة للنافورة أو المسبح الخاص بك.",
+      features: [
+        "مصنوع من مادة الأكريليك فايبر الشفاف"
+      ]
+    },
+    {
+      id: 17,
+      title: "شلال مثلث (دفع سفلي)",
+      code: "WF 015",
+      image: "/images/projects/project-16.jpeg",
+      description: "شلال شفاف مثلث دفع سفلي نقطي يضفي لمسة رائعة للنافورة أو المسبح الخاص بك.",
+      features: [
+        "مصنوع من مادة الأكريليك فايبر الشفاف"
+      ]
+    },
+    {
+      id: 18,
+      title: "شلال شفاف بإضاءة ليد (دفع نقطي)",
+      code: "WF 016",
+      image: "/images/projects/project-17.jpeg",
+      description: "شلال شفاف بإضاءة ليد يضفي لمسة رائعة للنافورة أو المسبح الخاصة بك.",
+      features: [
+        "مصنوع من مادة الأكريليك فايبر الشفاف"
+      ]
+    },
+    {
+      id: 19,
+      title: "شلال مثلث (دفع نقطي)",
+      code: "WF 017",
+      image: "/images/projects/project-18.jpeg",
+      description: "شلال مثلث شفاف يضفي لمسة رائعة للنافورة الخاصة بك.",
+      features: [
+        "مصنوع من مادة الأكريليك فايبر الشفاف"
+      ]
+    },
+    {
+      id: 20,
+      title: "شلال مستطيل (دفع نقطي)",
+      code: "WF 018",
+      image: "/images/projects/project-19.jpeg",
+      description: "شلال مستطيل شفاف يضفي لمسة رائعة للنافورة الخاصة بك.",
+      features: [
+        "مصنوع من مادة الأكريليك فايبر الشفاف"
+      ]
+    }
+  ],
+  fountains: [
+    {
+  id: 21,
+  title: "نافورة طولية",
+  code: "WF 019",
+  image: "/images/projects/project-9.jpeg",
+  description: "نافورة شفافة طولية تضفي لمسة رائعة للنافورة أو المسبح الخاص بك.",
+  features: [
+    "مصنوعة من مادة الأكريليك فايبر الشفاف"
+  ]
+}
+  ]
 };
 
 const ProductsSection = () => {
@@ -194,6 +285,12 @@ const ProductsSection = () => {
           <Nav.Item>
             <Nav.Link eventKey="accessories" className="product-tab">إكسسوارات</Nav.Link>
           </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="waterfallsNew" className="product-tab">الشلالات</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link eventKey="fountains" className="product-tab">النوافير</Nav.Link>
+          </Nav.Item>
         </Nav>
       </div>
 
@@ -203,7 +300,7 @@ const ProductsSection = () => {
           value={activeTab}
           onChange={(e) => setActiveTab(e.target.value)}
         >
-          <option value="waterfalls">أنظمة الأمان</option>
+          <option value="waterfalls">أمان المسابح</option>
           <option value="covers">أغطية المسابح</option>
           <option value="barriers">الحواجز</option>
           <option value="accessories">إكسسوارات</option>
@@ -219,10 +316,10 @@ const ProductsSection = () => {
     <Col
       key={product.id}
       md={4}
-      className={`fade-up ${isVisible ? 'visible' : ''}`}
+      className={`fade-up ${isVisible ? 'visible' : ''} mb-4`}
       style={{ transitionDelay: isVisible ? `${index * 0.2}s` : "0s" }}
     >
-      <ProductCard {...product} />
+      <ProductCard {...product} category={key}  />
     </Col>
   ))}
 </Row>

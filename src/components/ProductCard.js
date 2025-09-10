@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Card, Button, Modal } from 'react-bootstrap';
 import { CheckCircle } from 'react-bootstrap-icons';
 
-const ProductCard = ({ title, code, description, image, hoverImage, features }) => {
+const ProductCard = ({ title, code, description, image, hoverImage, features , category }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
@@ -37,15 +37,17 @@ const ProductCard = ({ title, code, description, image, hoverImage, features }) 
           <Card.Title className="product-title">{title}</Card.Title>
           <Card.Subtitle className="mb-2 text-muted">كود المنتج: {code}</Card.Subtitle>
           <Card.Text className="product-description">{description}</Card.Text>
-          <Button
-  className="details-btn" style={{ background: 'linear-gradient(135deg, #007bff, #25d366)', border: 'none' }}
-  size="sm"
-  onClick={() => setShowModal(true)}
->
-  <i className="fas fa-eye me-2"></i>
-  عرض التفاصيل
-</Button>
-
+          {category !== "waterfallsNew" && category !== "fountains" && (
+  <Button
+    className="details-btn"
+    style={{ background: 'linear-gradient(135deg, #007bff, #25d366)', border: 'none' }}
+    size="sm"
+    onClick={() => setShowModal(true)}
+  >
+    <i className="fas fa-eye me-2"></i>
+    عرض التفاصيل
+  </Button>
+)}
 
         </Card.Body>
       </Card>
