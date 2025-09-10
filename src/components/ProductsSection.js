@@ -183,7 +183,7 @@ const ProductsSection = () => {
       <div className="d-none d-md-flex justify-content-center mb-4 product-tabs">
         <Nav variant="pills" activeKey={activeTab} onSelect={(k) => setActiveTab(k)}>
           <Nav.Item>
-            <Nav.Link eventKey="waterfalls" className="product-tab">أنظمة الأمان</Nav.Link>
+            <Nav.Link eventKey="waterfalls" className="product-tab">أمان المسابح</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link eventKey="covers" className="product-tab">أغطية المسابح</Nav.Link>
