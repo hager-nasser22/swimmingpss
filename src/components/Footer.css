@@ -156,6 +156,10 @@
   .footer { text-align: center; }
   .footer-social { margin-top: 1.5rem; }
 }
+@media (max-width: 576px) {
+  .footer { text-align: center; }
+  .footer-social { margin-top: 1.5rem; }
+}
 /* === Contact Section === */
 .footer-contact {
   list-style: none;
