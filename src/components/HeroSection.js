@@ -20,15 +20,13 @@ const HeroSection = () => {
                 <h1 className="hero-title mb-4">
                   مؤسسة أعمال المسبح التجارية
                 </h1>
-                <p className="hero-subtitle mb-4">
-                  متخصصون في تصميم وتنفيذ شلالات ونوافير المياه المبتكرة، 
-                  بالإضافة إلى توريد منتجات السلامة المتطورة للمسابح والمنشآت المائية
+                <p className="hero-subtitle mb-4">تصنيع المسابح والنوافير الشفافة ومنتجات الأمان والاكسسوارات الخاصة بها
                 </p>
                 <div className="hero-buttons">
                   <Button 
                     variant="primary" 
                     size="lg" 
-                    className="me-3"
+                    className="me-3 btn1"
                     onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
                   >
                     تواصل معنا

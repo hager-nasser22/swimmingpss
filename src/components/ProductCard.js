@@ -22,7 +22,7 @@ const ProductCard = ({ title, code, description, image, hoverImage, features }) 
           />
           <div className="product-overlay">
             <Button
-              variant="primary"
+              // variant="primary"
               size="sm"
               onClick={() =>
                 document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
@@ -37,12 +37,15 @@ const ProductCard = ({ title, code, description, image, hoverImage, features }) 
           <Card.Subtitle className="mb-2 text-muted">كود المنتج: {code}</Card.Subtitle>
           <Card.Text className="product-description">{description}</Card.Text>
           <Button
-            variant="outline-primary"
-            size="sm"
-            onClick={() => setShowModal(true)}
-          >
-            عرض التفاصيل
-          </Button>
+  className="details-btn" style={{ background: 'linear-gradient(135deg, #007bff, #25d366)', border: 'none' }}
+  size="sm"
+  onClick={() => setShowModal(true)}
+>
+  <i className="fas fa-eye me-2"></i>
+  عرض التفاصيل
+</Button>
+
+
         </Card.Body>
       </Card>
 

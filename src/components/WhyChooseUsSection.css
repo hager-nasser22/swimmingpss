@@ -1,0 +1,79 @@
+.choose-section {
+  padding: 80px 0;
+  background: #fff;
+}
+
+.section-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #0b2239;
+}
+
+.title-underline {
+  width: 90px;
+  height: 4px;
+  background: linear-gradient(135deg, #007bff, #25d366);
+  margin: 0.8rem auto;
+  border-radius: 2px;
+}
+
+.choose-card {
+  background: #f9fbfd;
+  border-radius: 14px;
+  padding: 30px 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.choose-section.animate .choose-card {
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.choose-section.animate .choose-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.choose-section.animate .choose-card:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.choose-section.animate .choose-card:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+.choose-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 123, 255, 0.15);
+}
+
+.choose-card .icon {
+  font-size: 2rem;
+  background: linear-gradient(135deg, #007bff, #25d366);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.choose-card h5 {
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #0b2239;
+}
+
+.choose-card p {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

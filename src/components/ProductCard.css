@@ -79,3 +79,52 @@
   padding: 4px 10px;
   border-radius: 20px;
 }
+.details-btn {
+  background: none; /* نشيل الخلفية العادية */
+  border: 2px solid transparent; /* ممكن تحطي بوردر متدرج بعدين */
+  color: transparent;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 10px 28px;
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  transition: all 0.35s ease;
+
+  /* Gradient للنص */
+  background-image: linear-gradient(135deg, #007bff, #25d366);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* لمعة ناعمة */
+.details-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  transform: skewX(-25deg);
+  transition: all 0.6s ease;
+}
+
+/* حركة اللمعة عند Hover */
+.details-btn:hover::before {
+  left: 125%;
+}
+
+/* Hover تأثير */
+.details-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+}

@@ -62,7 +62,7 @@
 }
 
 .product-tab.active {
-  background: linear-gradient(135deg, #007bff, #0056b3) !important;
+  background: linear-gradient(135deg, #007bff, #25d366) !important;
   color: #fff !important;
   box-shadow: 0 5px 15px rgba(0, 91, 187, 0.4);
 }
@@ -114,7 +114,10 @@
 .product-card:hover .product-overlay {
   opacity: 1;
 }
-
+.product-card:hover .product-overlay .btn{
+  background: linear-gradient(135deg, #007bff, #25d366);
+  
+}
 .product-title {
   font-size: 1.25rem;
   font-weight: 600;
@@ -137,7 +140,7 @@
 }
 
 .feature-tag {
-  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  background: linear-gradient(135deg, #007bff, #25d366);
   color: white;
   padding: 4px 12px;
   border-radius: 15px;
@@ -248,7 +251,7 @@
   font-size: 1.2rem;
 }
 
-.gradient-btn {
+/* .gradient-btn {
   background: linear-gradient(135deg, #f6d365, #fda085);
   border: none;
   padding: 8px 20px;
@@ -260,7 +263,7 @@
 .gradient-btn:hover {
   opacity: 0.9;
   transform: translateY(-2px);
-}
+} */
 
 @keyframes fadeInScale {
   from {

@@ -1,35 +1,31 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import './AboutSection.css';
+import React, { useEffect, useRef, useState } from "react";
+import { Container, Row, Col } from "react-bootstrap";
+import "./AboutSection.css";
 
 const AboutSection = () => {
-  const sectionRef = useRef(null);
+  const aboutRef = useRef(null);
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-    const element = sectionRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setAnimate(true);
-          observer.unobserve(entry.target); // أول مرة بس
+          observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.2 } // يبدأ لما 20% من السيكشن يبان
+      { threshold: 0.2 }
     );
 
-    if (element) observer.observe(element);
-
-    return () => {
-      if (element) observer.unobserve(element);
-    };
+    if (aboutRef.current) observer.observe(aboutRef.current);
+    return () => observer.disconnect();
   }, []);
 
   return (
     <section
       id="about"
-      className={`about-section ${animate ? 'animate' : ''}`}
-      ref={sectionRef}
+      className={`about-section ${animate ? "animate" : ""}`}
+      ref={aboutRef}
     >
       <Container>
         <Row className="justify-content-center">
@@ -42,43 +38,38 @@ const AboutSection = () => {
         </Row>
         <Row className="align-items-center">
           <Col lg={6} className="mb-4 mb-lg-0">
-            <div className="about-content">
+            <div className="about-content text-start">
               <h3 className="about-title mb-4">
                 مؤسسة أعمال المسبح التجارية
               </h3>
-              <p className="about-text mb-4">
-                نحن مؤسسة رائدة في مجال تصميم وتنفيذ شلالات ونوافير المياه المبتكرة، 
-                مع أكثر من عقد من الخبرة في توريد منتجات السلامة المتطورة للمسابح والمنشآت المائية.
+              <p className="about-text">
+                <strong>أعمال المسبح التجارية</strong>، مؤسسة سعودية تأسست عام
+                2018، متخصصة في تصنيع المسابح ومنتجات أمان المسبح والنوافير
+                والشلالات الشفافة المصنوعة من مادة الأكريليك فايبر الشفاف.
               </p>
-              <p className="about-text mb-4">
-                نلتزم بتقديم حلول مائية مبتكرة وعالية الجودة تلبي احتياجات عملائنا، 
-                مع التركيز على الأمان والجمال والاستدامة في كل مشروع نقوم به.
+              <p className="about-text">
+                تميزنا ينبع من كوننا{" "}
+                <strong>مصنّعين ومبتكرين</strong>، لا موزعين أو وكلاء، فجميع
+                منتجاتنا هي من ابتكارنا وتصنيعنا بالكامل.
               </p>
-              <div className="about-features">
-                <div className="feature-item">
-                  <i className="fas fa-check-circle text-primary me-2"></i>
-                  <span>خبرة أكثر من 10 سنوات في المجال</span>
-                </div>
-                <div className="feature-item">
-                  <i className="fas fa-check-circle text-primary me-2"></i>
-                  <span>تصميمات مبتكرة ومخصصة</span>
-                </div>
-                <div className="feature-item">
-                  <i className="fas fa-check-circle text-primary me-2"></i>
-                  <span>منتجات عالية الجودة</span>
-                </div>
-                <div className="feature-item">
-                  <i className="fas fa-check-circle text-primary me-2"></i>
-                  <span>خدمة عملاء متميزة</span>
-                </div>
-              </div>
+              <p className="about-text">
+                لقد حصلنا على <strong>براءات اختراع</strong> تثبت تفردنا وتؤكد
+                التزامنا بالجودة والتميّز، ونخدم عملاءنا في جميع مدن المملكة
+                العربية السعودية ودول الخليج العربي.
+              </p>
+              <p className="about-text">
+                نحن نؤمن أن <strong>الابتكار هو أساس الصناعة</strong>، وأن من
+                يبتكر يبدع ويطور باستمرار. نعمل بشغف لنمنح عملاءنا حلولاً عملية
+                ومبتكرة تعكس أعلى معايير الأمان والجمال في عالم المسابح
+                والمسطحات المائية.
+              </p>
             </div>
           </Col>
           <Col lg={6}>
             <div className="about-image">
-              <img 
-                src="https://cdn.salla.sa/KrDbg/02733dd4-cc98-482b-96b5-50b973527c82-1000x706.875-1J5bOQIpuxkRcrtBWzw2EtklogZ5PNguSYgMK6bA.jpg" 
-                alt="عن المؤسسة" 
+              <img
+                src="https://cdn.salla.sa/KrDbg/02733dd4-cc98-482b-96b5-50b973527c82-1000x706.875-1J5bOQIpuxkRcrtBWzw2EtklogZ5PNguSYgMK6bA.jpg"
+                alt="عن المؤسسة"
                 className="img-fluid rounded-3 shadow-lg"
               />
             </div>

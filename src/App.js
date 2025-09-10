@@ -2,13 +2,15 @@ import React from 'react';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import ProductsSection from './components/ProductsSection';
-import ContactSection from './components/ContactSection';
+// import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import './App.css';
 import SiteNavbar from './components/SiteNavbar';
 import ProjectsSlider from './components/ProjectsSlider';
-import StatsSection from './components/StatsSection';
+// import StatsSection from './components/StatsSection';
 import TestimonialsSection from './components/TestimonialsSection';
+import WhyChooseUsSection from './components/WhyChooseUsSection';
+import ServicesSection from './components/ServicesSection';
 
 function App() {
   return (
@@ -16,11 +18,13 @@ function App() {
       <SiteNavbar />
       <HeroSection />
       <AboutSection />
+      <WhyChooseUsSection />
       <ProjectsSlider />
-      <StatsSection />
+      <ServicesSection/>
+      {/* <StatsSection /> */}
       <ProductsSection />
       <TestimonialsSection />
-      <ContactSection />
+      {/* <ContactSection /> */}
       <Footer />
     </div>
   );
