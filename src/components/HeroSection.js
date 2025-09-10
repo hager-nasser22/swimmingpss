@@ -24,7 +24,7 @@ const HeroSection = () => {
                 </p>
                 <div className="hero-buttons">
                   <Button 
-                    variant="primary" 
+                    // variant="primary" 
                     size="lg" 
                     className="me-3 btn1"
                     onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}

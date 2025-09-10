@@ -1,4 +1,5 @@
 import React from 'react';
+import '@fortawesome/fontawesome-svg-core/styles.css';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/AboutSection';
 import ProductsSection from './components/ProductsSection';
@@ -8,7 +9,7 @@ import './App.css';
 import SiteNavbar from './components/SiteNavbar';
 import ProjectsSlider from './components/ProjectsSlider';
 // import StatsSection from './components/StatsSection';
-import TestimonialsSection from './components/TestimonialsSection';
+// import TestimonialsSection from './components/TestimonialsSection';
 import WhyChooseUsSection from './components/WhyChooseUsSection';
 import ServicesSection from './components/ServicesSection';
 
@@ -23,7 +24,7 @@ function App() {
       <ServicesSection/>
       {/* <StatsSection /> */}
       <ProductsSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       {/* <ContactSection /> */}
       <Footer />
     </div>

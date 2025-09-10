@@ -24,6 +24,7 @@ const ProductCard = ({ title, code, description, image, hoverImage, features }) 
             <Button
               // variant="primary"
               size="sm"
+              className='gradient-btn'
               onClick={() =>
                 document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
               }
@@ -76,6 +77,7 @@ const ProductCard = ({ title, code, description, image, hoverImage, features }) 
           </Button>
           <Button
             className="gradient-btn"
+            style={{ background: 'linear-gradient(135deg, #007bff, #25d366)', border: 'none' }}
             onClick={() => {
               setShowModal(false);
               document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });

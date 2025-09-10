@@ -1,10 +1,12 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './Footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id='contact'>
       <Container>
         <Row className="gy-4">
           {/* Brand */}
@@ -34,7 +36,7 @@ const Footer = () => {
           {/* Contact + Social */}
           {/* Contact + Social */}
 <Col lg={4} md={12}>
-  <h4 className="footer-section-title">تواصل معنا</h4>
+  <h4 className="footer-section-title" >تواصل معنا</h4>
   <ul className="footer-contact">
     <li>
       <i className="fas fa-envelope contact-icon"></i>
@@ -60,8 +62,9 @@ const Footer = () => {
       <i className="fab fa-tiktok"></i>
     </a>
     <a href="https://x.com/aamalalmasbah" target="_blank" rel="noreferrer" className="social-icon twitter">
-      <i className="fab fa-twitter"></i>
-    </a>
+  <FontAwesomeIcon icon={faXTwitter} />
+</a>
+
     <a href="https://www.instagram.com/Aamalalmasbah" target="_blank" rel="noreferrer" className="social-icon instagram">
       <i className="fab fa-instagram"></i>
     </a>
@@ -74,7 +77,7 @@ const Footer = () => {
 
         <Row>
           <Col className="text-center">
-            <p className="copyright">© 2024 مؤسسة أعمال المسبح التجارية. جميع الحقوق محفوظة.</p>
+            <p className="copyright">©  مؤسسة أعمال المسبح التجارية. جميع الحقوق محفوظة.</p>
           </Col>
         </Row>
       </Container>
