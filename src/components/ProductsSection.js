@@ -87,7 +87,7 @@ const productsData = {
       id: 6,
       title: "غطاء المسبح الثابت BVC",
       code: "PVC 012",
-      image: "/images/projects/project-1.jpeg",
+      image: "/images/projects/project-11.jpeg",
       description: "غطاء ثابت متين يحافظ على أمان الأطفال.",
       features: [
         "غطاء من BVC مثبت بمسامير بحواف المسبح",
@@ -96,13 +96,27 @@ const productsData = {
         "مصنوع من خامة BVC"
       ]
     },
+    {
+  id: 7,
+  title: "غطاء المسبح شبك",
+  code: "PVC 011",
+  image: "/images/projects/project-10.jpeg", // غيري الصورة لو عندك لينك تاني
+  description: "غطاء شبك متين يحافظ على أمان الأطفال.",
+  features: [
+    "غطاء شبك مثبت بمسامير بحواف المسبح",
+    "المنتج مقاوم للرطوبة والشمس",
+    "يؤمن المسبح عن الأطفال",
+    "سهل الفك والتركيب"
+  ]
+}
+
   ],
   barriers: [
     {
-      id: 7,
+      id: 8,
       title: "حاجز الأطفال (متغير العمق)",
       code: "SWP 018",
-      image: "/images/projects/project-3.jpeg",
+      image: "/images/projects/project-9.jpeg",
       description: "حاجز ذكي يمنع الأطفال من تجاوز الأعماق الخطرة.",
       features: [
         "حاجز فاصل بين العمق العالي والمنخفض",
@@ -114,7 +128,7 @@ const productsData = {
       ]
     },
     {
-      id: 8,
+      id: 9,
       title: "منتج حاجز الأمان",
       code: "SWW 01",
       image: "/images/projects/project-1.jpeg",
@@ -129,7 +143,7 @@ const productsData = {
   ],
   accessories: [
     {
-      id: 9,
+      id: 10,
       title: "مجرى الأوفر فلو",
       code: "OFL 02",
       image: "/images/projects/project-7.jpeg",
@@ -141,7 +155,7 @@ const productsData = {
       ]
     },
     {
-      id: 10,
+      id: 11,
       title: "سلم المسبح",
       code: "ACC 01",
       image: "/images/projects/project-8.jpeg",
@@ -151,6 +165,18 @@ const productsData = {
         "مصنوع من الاستانلس ستيل 316"
       ]
     },
+    {
+  id: 12,
+  title: "مجري أوفر فلو",
+  code: "OFL 01",
+  image: "/images/projects/project-14.jpeg", // غيّري اسم الصورة حسب اللي عندك
+  description: "غطاء من الاستانلس ستيل 316 خاص بمجاري الأوفر فلو.",
+  features: [
+    "مصنوع من الاستانلس ستيل 316 عالي الجودة",
+    "مخصص لمجاري الأوفر فلو",
+    "إمكانية إضافة خيارات مثل حجر الزينة وغيرها"
+  ]
+}
   ],
   
 };
