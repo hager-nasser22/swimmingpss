@@ -304,6 +304,8 @@ const ProductsSection = () => {
           <option value="covers">أغطية المسابح</option>
           <option value="barriers">الحواجز</option>
           <option value="accessories">إكسسوارات</option>
+          <option value="waterfallsNew">الشلالات</option>
+          <option value="fountains">النوافير</option>
         </Form.Select>
       </div>
 
