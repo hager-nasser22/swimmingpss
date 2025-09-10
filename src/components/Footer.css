@@ -155,10 +155,14 @@
 @media (max-width: 768px) {
   .footer { text-align: center; }
   .footer-social { margin-top: 1.5rem; }
+  .footer-contact li{position: relative;
+    right: 39%;}
 }
 @media (max-width: 576px) {
   .footer { text-align: center; }
-  .footer-social { margin-top: 1.5rem; }
+  .footer-social , .footer-contact li{ margin-top: 1.5rem;}
+  .footer-contact li{position: relative;
+    right: 39%;}
 }
 /* === Contact Section === */
 .footer-contact {
