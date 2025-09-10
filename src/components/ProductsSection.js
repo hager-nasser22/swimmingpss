@@ -228,7 +228,7 @@ const productsData = {
   id: 21,
   title: "نافورة طولية",
   code: "WF 019",
-  image: "/images/projects/project-9.jpeg",
+  image: "/images/projects/project-20.jpeg",
   description: "نافورة شفافة طولية تضفي لمسة رائعة للنافورة أو المسبح الخاص بك.",
   features: [
     "مصنوعة من مادة الأكريليك فايبر الشفاف"

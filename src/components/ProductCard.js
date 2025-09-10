@@ -35,7 +35,9 @@ const ProductCard = ({ title, code, description, image, hoverImage, features , c
         </div>
         <Card.Body className="text-start">
           <Card.Title className="product-title">{title}</Card.Title>
+          {category !== "waterfallsNew" && category !== "fountains" && (
           <Card.Subtitle className="mb-2 text-muted">كود المنتج: {code}</Card.Subtitle>
+          )}
           <Card.Text className="product-description">{description}</Card.Text>
           {category !== "waterfallsNew" && category !== "fountains" && (
   <Button
