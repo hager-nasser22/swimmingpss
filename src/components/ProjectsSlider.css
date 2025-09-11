@@ -1,12 +1,12 @@
 .projects-section {
   padding: 70px 0;
-  background: #f9fbfd; /* خلفية فاتحة */
+  background: #f9fbfd;
 }
 
 .section-title {
   font-size: 2.4rem;
   font-weight: 700;
-  color: #0b2239; /* أزرق غامق */
+  color: #0b2239;
   margin-bottom: 12px;
 }
 
@@ -16,33 +16,38 @@
   margin-bottom: 35px;
 }
 
-.carousel-image-wrapper {
+.carousel-video-wrapper {
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-  transition: transform 0.4s ease;
-}
-.carousel-image-wrapper:hover {
-  transform: scale(1.02);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  background: #000;
+  position: relative;
 }
 
-.carousel-image {
+.carousel-video {
   height: 480px;
-  object-fit: fill;
+  object-fit: cover;
   width: 100%;
   border-radius: 16px;
 }
 
+/* التحكم في الأزرار */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  filter: invert(1); /* يخلي الأسهم واضحة على الخلفية */
+  filter: invert(1);
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #007bff;
 }
 
 @media (max-width: 992px) {
-  .carousel-image { height: 320px; }
+  .carousel-video { height: 320px; }
 }
 
 @media (max-width: 576px) {
-  .carousel-image { height: 220px; }
+  .carousel-video { height: 220px; }
   .section-title { font-size: 1.8rem; }
 }
