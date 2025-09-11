@@ -162,7 +162,7 @@
   .footer { text-align: center; }
   .footer-social , .footer-contact li{ margin-top: 1.5rem;}
   .footer-contact li{position: relative;
-    right: 39%;}
+    right: 25%;}
 }
 /* === Contact Section === */
 .footer-contact {
