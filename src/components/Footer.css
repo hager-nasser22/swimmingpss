@@ -222,3 +222,79 @@
   color: #fff;
 }
 
+/* === Floating WhatsApp Button === */
+.whatsapp-float {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 28px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+.scroll-to-top {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+.footer-certification {
+  color: #25d366; /* أخضر موثوق */
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-certification:hover {
+  color: #007bff; /* أزرق عند المرور */
+}
+
+
+.underline-link {
+  background: rgba(255,255,255,0.08);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #25d366;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  
+}
+.underline-link:hover {
+  background: linear-gradient(135deg, #007bff, #25d366);
+  color: #fff;
+}
+/* .underline-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(135deg, #007bff, #25d366);
+  transition: width 0.3s ease;
+}
+.underline-link:hover::after {
+  width: 100%;
+} */

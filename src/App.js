@@ -12,6 +12,7 @@ import ProjectsSlider from './components/ProjectsSlider';
 // import TestimonialsSection from './components/TestimonialsSection';
 import WhyChooseUsSection from './components/WhyChooseUsSection';
 import ServicesSection from './components/ServicesSection';
+import CertificationSection from './components/CertificationSection';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <ProductsSection />
       {/* <TestimonialsSection /> */}
       {/* <ContactSection /> */}
+      {/* <CertificationSection /> */}
       <Footer />
     </div>
   );

@@ -1,12 +1,57 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
 import { Container, Row, Col } from 'react-bootstrap';
 import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import { FaArrowUp } from 'react-icons/fa'; 
 
 const Footer = () => {
+   const [showScroll, setShowScroll] = useState(false);
+  const [showWhatsApp, setShowWhatsApp] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setShowScroll(true);
+      } else {
+        setShowScroll(false);
+      }
+
+      if (window.scrollY > 50) {   // ⬅️ زر الواتساب يظهر بعد 50px
+        setShowWhatsApp(true);
+      } else {
+        setShowWhatsApp(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   return (
     <footer className="footer" id='contact'>
+      {showWhatsApp && (
+        <a 
+          href="https://wa.me/966504480025" 
+          className="whatsapp-float text-decoration-none"  
+          target="_blank" 
+          rel="noreferrer"
+        >
+          <i className="fab fa-whatsapp"></i>
+        </a>
+      )}
+
+      {/* زر Scroll To Top */}
+      {/* {showScroll && (
+        <button className={`scroll-to-top ${showScroll ? 'show' : ''}`} onClick={scrollToTop}>
+          <FaArrowUp />
+        </button>
+      )} */}
+
       <Container>
         <Row className="gy-4">
           {/* Brand */}
@@ -30,6 +75,7 @@ const Footer = () => {
               <li><a href="#about">من نحن</a></li>
               <li><a href="#products">منتجاتنا</a></li>
               <li><a href="#services">خدمتنا</a></li>
+              
             </ul>
           </Col>
 
@@ -75,11 +121,24 @@ const Footer = () => {
 
         <hr className="footer-divider" />
 
-        <Row>
-          <Col className="text-center">
-            <p className="copyright">©  مؤسسة أعمال المسبح التجارية. جميع الحقوق محفوظة.</p>
-          </Col>
-        </Row>
+        <Row className="justify-content-between">
+  <Col md={6} className="text-start ">
+    <p className="copyright">
+      © مؤسسة أعمال المسبح التجارية. جميع الحقوق محفوظة.
+    </p>
+  </Col>
+  <Col md={6} className=" text-center">
+    <a 
+      href="https://eauthenticate.saudibusiness.gov.sa/certificate-details" 
+      target="_blank" 
+      rel="noreferrer"
+      className="footer-certification underline-link"
+    >
+      🔒 موثق من المركز السعودي للأعمال
+    </a>
+  </Col>
+</Row>
+
       </Container>
     </footer>
   );
